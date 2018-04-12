@@ -680,6 +680,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/libmmcamera_tintless_algo.so:system/vendor/lib64/libmmcamera_tintless_algo.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/whyred/proprietary/lib/egl/libGLES_android.so:system/lib/egl/libGLES_android.so \
     vendor/xiaomi/whyred/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
     vendor/xiaomi/whyred/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/xiaomi/whyred/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
@@ -702,11 +703,13 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/whyred/proprietary/lib/libaudioutils.so:system/lib/libaudioutils.so \
     vendor/xiaomi/whyred/proprietary/lib/libimscamera_jni.so:system/lib/libimscamera_jni.so \
     vendor/xiaomi/whyred/proprietary/lib/libimsmedia_jni.so:system/lib/libimsmedia_jni.so \
+    vendor/xiaomi/whyred/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
     vendor/xiaomi/whyred/proprietary/lib/libsensor.so:system/lib/libsensor.so \
     vendor/xiaomi/whyred/proprietary/lib/libsensor1.so:system/lib/libsensor1.so \
     vendor/xiaomi/whyred/proprietary/lib/libsensor_reg.so:system/lib/libsensor_reg.so \
     vendor/xiaomi/whyred/proprietary/lib/libsensorservice.so:system/lib/libsensorservice.so \
     vendor/xiaomi/whyred/proprietary/lib/libsensorservicehidl.so:system/lib/libsensorservicehidl.so \
+    vendor/xiaomi/whyred/proprietary/lib64/egl/libGLES_android.so:system/lib64/egl/libGLES_android.so \
     vendor/xiaomi/whyred/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/xiaomi/whyred/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
     vendor/xiaomi/whyred/proprietary/lib64/lib-imsvt.so:system/lib64/lib-imsvt.so \
@@ -728,6 +731,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/whyred/proprietary/lib64/libaudioutils.so:system/lib64/libaudioutils.so \
     vendor/xiaomi/whyred/proprietary/lib64/libimscamera_jni.so:system/lib64/libimscamera_jni.so \
     vendor/xiaomi/whyred/proprietary/lib64/libimsmedia_jni.so:system/lib64/libimsmedia_jni.so \
+    vendor/xiaomi/whyred/proprietary/lib64/libmmosal.so:system/lib64/libmmosal.so \
     vendor/xiaomi/whyred/proprietary/lib64/libsensor.so:system/lib64/libsensor.so \
     vendor/xiaomi/whyred/proprietary/lib64/libsensor1.so:system/lib64/libsensor1.so \
     vendor/xiaomi/whyred/proprietary/lib64/libsensor_reg.so:system/lib64/libsensor_reg.so \
@@ -735,7 +739,20 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/whyred/proprietary/lib64/libsensorservicehidl.so:system/lib64/libsensorservicehidl.so \
     vendor/xiaomi/whyred/proprietary/lib64/libthermalcallback.so:system/lib64/libthermalcallback.so \
     vendor/xiaomi/whyred/proprietary/lib64/libthermalservice.so:system/lib64/libthermalservice.so \
+    vendor/xiaomi/whyred/proprietary/vendor/bin/ims_rtp_daemon:system/vendor/bin/ims_rtp_daemon \
+    vendor/xiaomi/whyred/proprietary/vendor/bin/imsdatadaemon:system/vendor/bin/imsdatadaemon \
+    vendor/xiaomi/whyred/proprietary/vendor/bin/imsqmidaemon:system/vendor/bin/imsqmidaemon \
+    vendor/xiaomi/whyred/proprietary/vendor/bin/imsrcsd:system/vendor/bin/imsrcsd \
+    vendor/xiaomi/whyred/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:system/vendor/lib/egl/libGLESv1_CM_adreno.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/egl/libGLESv2_adreno.so:system/vendor/lib/egl/libGLESv2_adreno.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/egl/libQTapGLES.so:system/vendor/lib/egl/libQTapGLES.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/egl/libq3dtools_esx.so:system/vendor/lib/egl/libq3dtools_esx.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib/hw/activity_recognition.sdm660.so:system/vendor/lib/hw/activity_recognition.sdm660.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/hw/vulkan.sdm660.so:system/vendor/lib/hw/vulkan.sdm660.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib/lib-imscmservice.so:system/vendor/lib/lib-imscmservice.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
@@ -790,15 +807,43 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/whyred/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
-    vendor/xiaomi/whyred/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib/libwms.so:system/vendor/lib/libwms.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib/sensor_calibrate.so:system/vendor/lib/sensor_calibrate.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib/sensors.ssc.so:system/vendor/lib/sensors.ssc.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:system/vendor/lib64/egl/eglSubDriverAndroid.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/egl/libEGL_adreno.so:system/vendor/lib64/egl/libEGL_adreno.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:system/vendor/lib64/egl/libGLESv1_CM_adreno.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:system/vendor/lib64/egl/libGLESv2_adreno.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/egl/libQTapGLES.so:system/vendor/lib64/egl/libQTapGLES.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:system/vendor/lib64/egl/libq3dtools_adreno.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/egl/libq3dtools_esx.so:system/vendor/lib64/egl/libq3dtools_esx.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/hw/activity_recognition.sdm660.so:system/vendor/lib64/hw/activity_recognition.sdm660.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/hw/vulkan.sdm660.so:system/vendor/lib64/hw/vulkan.sdm660.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/lib-imscmservice.so:system/vendor/lib64/lib-imscmservice.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/lib-imsdpl.so:system/vendor/lib64/lib-imsdpl.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/lib-imsqimf.so:system/vendor/lib64/lib-imsqimf.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/lib-imsrcs-v2.so:system/vendor/lib64/lib-imsrcs-v2.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/lib-imsxml.so:system/vendor/lib64/lib-imsxml.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxAacDec.so:system/vendor/lib64/libOmxAacDec.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxAacEnc.so:system/vendor/lib64/libOmxAacEnc.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxAlacDec.so:system/vendor/lib64/libOmxAlacDec.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxAlacDecSw.so:system/vendor/lib64/libOmxAlacDecSw.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxAmrDec.so:system/vendor/lib64/libOmxAmrDec.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxAmrEnc.so:system/vendor/lib64/libOmxAmrEnc.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxAmrwbplusDec.so:system/vendor/lib64/libOmxAmrwbplusDec.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxApeDec.so:system/vendor/lib64/libOmxApeDec.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxApeDecSw.so:system/vendor/lib64/libOmxApeDecSw.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxCore.so:system/vendor/lib64/libOmxCore.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxEvrcDec.so:system/vendor/lib64/libOmxEvrcDec.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxEvrcEnc.so:system/vendor/lib64/libOmxEvrcEnc.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxG711Dec.so:system/vendor/lib64/libOmxG711Dec.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxG711Enc.so:system/vendor/lib64/libOmxG711Enc.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxQcelp13Dec.so:system/vendor/lib64/libOmxQcelp13Dec.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxQcelp13Enc.so:system/vendor/lib64/libOmxQcelp13Enc.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxVdec.so:system/vendor/lib64/libOmxVdec.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxVenc.so:system/vendor/lib64/libOmxVenc.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxVpp.so:system/vendor/lib64/libOmxVpp.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libOmxWmaDec.so:system/vendor/lib64/libOmxWmaDec.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/libaudcal.so:system/vendor/lib64/libaudcal.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/libaudioalsa.so:system/vendor/lib64/libaudioalsa.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/libaudioparsers.so:system/vendor/lib64/libaudioparsers.so \
@@ -825,8 +870,19 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/libsensor_reg.so:system/vendor/lib64/libsensor_reg.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/libthermalclient.so:system/vendor/lib64/libthermalclient.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
+    vendor/xiaomi/whyred/proprietary/vendor/lib64/libwms.so:system/vendor/lib64/libwms.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/sensor_calibrate.so:system/vendor/lib64/sensor_calibrate.so \
     vendor/xiaomi/whyred/proprietary/vendor/lib64/sensors.ssc.so:system/vendor/lib64/sensors.ssc.so
 
 PRODUCT_PACKAGES += \
-    libtime_genoff
+    libgpustats \
+    libsdm-disp-vndapis \
+    libtime_genoff \
+    ims \
+    imssettings \
+    TimeService \
+    QtiTelephonyServicelibrary \
+    embmslibrary \
+    qcrilhook \
+    qti-telephony-common \
+    qti-vzw-ims-internal
